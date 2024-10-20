@@ -1,0 +1,48 @@
+plugins {
+    id 'org.springframework.boot' version '3.3.4'
+    id 'io.spring.dependency-management' version '1.1.0'
+    id 'java'
+    // Removendo o plugin com.github.ben-manes.versions, pode ser adicionado novamente mais tarde se necessário.
+}
+
+group = 'com.dio.catalog'
+version = '1.0.0'
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(17)
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+    implementation 'jakarta.persistence:jakarta.persistence-api:3.1.0'  // Pode ser atualizado para versão 3.2.0 se necessário.
+    implementation 'org.hibernate.orm:hibernate-core:6.1.5.Final'        // Verifique se pode ser atualizado.
+    implementation 'org.hibernate.orm:hibernate-envers:6.1.5.Final'      // Verifique se pode ser atualizado.
+    implementation 'org.hibernate.validator:hibernate-validator:8.0.0.Final'  // Pode ser atualizado para 9.0.0 se necessário.
+    implementation 'org.projectlombok:lombok'
+    annotationProcessor 'org.projectlombok:lombok'
+    implementation 'org.springdoc:springdoc-openapi-ui:1.6.9'            // Pode ser atualizado para 1.8.0.
+    runtimeOnly 'com.h2database:h2'                                       // Pode ser atualizado para 2.3.232.
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+}
+
+bootJar {
+    mainClass = 'com.dio.catalog.FerramentaCatalogServiceApplication'
+}
+
+tasks.named('test') {
+    useJUnitPlatform()
+}
+
+// Adicionando o BOM do Spring Cloud para garantir compatibilidade com dependências Spring Cloud, se necessário
+dependencyManagement {
+    imports {
+        mavenBom "org.springframework.cloud:spring-cloud-dependencies:2022.0.3"
+    }
+}

@@ -1,0 +1,110 @@
+# Compiled class file
+*.class
+
+# Log files
+*.log
+
+# BlueJ files
+*.ctxt
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
+# Maven
+log/
+target/
+!.mvn/wrapper/maven-wrapper.jar
+**/src/main/resources/application-*.properties
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+
+# Gradle
+.gradle/
+build/
+
+# Ignore Gradle Wrapper files
+!gradle/wrapper/gradle-wrapper.jar
+!gradle/wrapper/gradle-wrapper.properties
+
+# Ignore Gradle-specific .bat and .sh scripts
+gradlew
+gradlew.bat
+
+# Eclipse
+.classpath
+.project
+.settings/
+bin/
+*.swp
+
+# Idea files
+.idea/
+*.iml
+*.ipr
+*.iws
+out/
+*.tmp
+
+# IntelliJ IDEA
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+
+# NetBeans
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/build-impl.xml
+
+# VSCode
+.vscode/
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+
+# Linux
+*~
+
+# Logs
+logs/
+*.log
+log/
+
+# Ignore custom logs files
+logs/
+
+# Ignore OS generated files
+.DS_Store
+
+# Ignore JavaScript package management files (for projects with JS dependencies)
+node_modules/
+npm-debug.log
+
+# Ignore springboot devtools' restart trigger file
+.spring-boot-devtools.properties
+
+# Ignore IntelliJ IDEA files
+.idea/
+*.iml
+.idea/*
+out/
+
+# PNG Images
+# Include all PNG files for versioning
+!*.png
+!*.PNG

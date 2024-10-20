@@ -1,0 +1,5 @@
+rootProject.name = 'Controle_Ferramentas'
+
+include 'ferramenta-catalog-service'
+include 'api-gateway'
+include 'eureka-service'

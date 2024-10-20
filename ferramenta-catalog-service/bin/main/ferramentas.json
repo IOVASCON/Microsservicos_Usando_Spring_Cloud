@@ -1,0 +1,23 @@
+[
+    {
+      "nome": "Martelo",
+      "descricao": "Martelo de aço forjado com cabo de madeira",
+      "estado": "DISPONIVEL",
+      "categoria": {
+        "id": 1,
+        "nome": "Ferramentas Manuais",
+        "descricao": "Ferramentas utilizadas manualmente"
+      }
+    },
+    {
+      "nome": "Chave de Fenda",
+      "descricao": "Chave de fenda com ponta plana",
+      "estado": "DISPONIVEL",
+      "categoria": {
+        "id": 1,
+        "nome": "Ferramentas Manuais",
+        "descricao": "Ferramentas utilizadas manualmente"
+      }
+    }
+  ]
+  
