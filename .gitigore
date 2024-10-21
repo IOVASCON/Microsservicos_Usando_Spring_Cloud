@@ -108,3 +108,8 @@ out/
 # Include all PNG files for versioning
 !*.png
 !*.PNG
+
+# PDF Files
+# Include all PDF files for versioning
+!*.pdf
+!*.PDF
